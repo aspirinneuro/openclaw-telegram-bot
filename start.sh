@@ -2,7 +2,7 @@
 
 echo "Starting OpenClaw..."
 
-# configure OpenRouter key
-openclaw agents auth set openrouter "$OPENROUTER_API_KEY" || true
+export NODE_OPTIONS="--max-old-space-size=768"
+export OPENROUTER_API_KEY=$OPENROUTER_API_KEY
 
 openclaw gateway --allow-unconfigured
