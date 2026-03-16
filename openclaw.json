@@ -16,7 +16,7 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "openrouter/nvidia/nemotron-3-nano-30b-a3b:free"
+        "primary": "openrouter/hunter-alpha"
       },
       "models": {
         "openrouter/auto": {
