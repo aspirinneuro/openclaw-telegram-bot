@@ -1,0 +1,96 @@
+{
+  "wizard": {
+    "lastRunAt": "2026-03-16T11:53:53.980Z",
+    "lastRunVersion": "2026.3.13",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/nvidia/nemotron-3-nano-30b-a3b:free"
+      },
+      "models": {
+        "openrouter/auto": {
+          "alias": "OpenRouter"
+        },
+        "openrouter/nvidia/nemotron-3-nano-30b-a3b:free": {}
+      },
+      "workspace": "C:\\Users\\Aspirin\\.openclaw\\workspace"
+    }
+  },
+  "tools": {
+    "profile": "coding",
+    "web": {
+      "search": {
+        "enabled": true,
+        "provider": "gemini",
+        "gemini": {
+          "apiKey": "Skip for now"
+        }
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+	  "allowFrom": ["5447721570"],
+      "botToken": "8518718855:AAGYP0mOTa6pu7uKXVNGd5Ie9kDs1XUAGK4",
+      "groupPolicy": "allowlist",
+      "streaming": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "d9ac2702afbcbf786ec1f2a0891d10a1bb1524f4fbdc8e9a"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.3.13",
+    "lastTouchedAt": "2026-03-16T11:53:54.038Z"
+  }
+}
