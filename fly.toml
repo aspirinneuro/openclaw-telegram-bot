@@ -10,6 +10,6 @@ NODE_OPTIONS="--max-old-space-size=1536"
 
 [[vm]]
 cpu_kind = "shared"
-cpus = 2
+cpus = 1
 memory = "2gb"
 memory_mb = 2048
